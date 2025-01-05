@@ -1,0 +1,177 @@
+/* Drop Down Menu CSS */
+.dropdown-menu {
+    width: 350px;
+    height: 95vh;
+    position: fixed;
+    left: -100%; /* Initially off-screen */
+    top: 0;
+    background-color: rgba(58, 58, 58, 0.5);
+    backdrop-filter: blur(10px);
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    z-index: 15; /* Ensure it's on top of other content */
+    overflow: hidden;
+    opacity: 0; /* Menu starts hidden */
+    transition: left 0.6s ease-in-out, opacity 0.6s ease-in-out; /* Smooth slide and fade for the menu */
+}
+
+.dropdown-menu .main .a a{
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 0.1vw;
+    color: white;
+    font-weight: 400;
+}
+
+.dropdown-menu .main .a:hover {
+    background-color: rgb(246, 139, 7);
+    color: black;
+}
+
+/* Active state - menu slides in */
+.dropdown-menu.active {
+    left: 0; /* Slide to visible position */
+    opacity: 1; /* Make the menu visible */
+}
+
+/* Main content of the dropdown */
+.dropdown-menu .main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    opacity: 1; /* Ensure the main content is visible */
+    transition: opacity 0.6s ease-in-out; /* Smooth fade-in for the main content */
+}
+
+/* Menu items inside the dropdown */
+.dropdown-menu .main .a {
+    width: 150px;
+    height: 40px;
+    border: 1px solid rgb(246, 139, 7);
+    text-align: center;
+    line-height: 40px;
+    border-radius: 15px;
+    color: white;
+    transform: translateX(-100px); /* Slide in from the left */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.5s ease-in-out, transform 0.6s ease-in-out; /* Smooth slide and fade */
+}
+
+/* Staggered animation for menu items (active state) */
+.dropdown-menu.active .main .a {
+    opacity: 1; /* Fade in the menu items */
+    transform: translateX(0); /* Slide them into place */
+}
+
+.dropdown-menu.active .main .a:nth-child(1) {
+    transition-delay: 0.1s;
+}
+
+.dropdown-menu.active .main .a:nth-child(2) {
+    transition-delay: 0.18s;
+}
+
+.dropdown-menu.active .main .a:nth-child(3) {
+    transition-delay: 0.26s;
+}
+
+.dropdown-menu.active .main .a:nth-child(4) {
+    transition-delay: 0.34s;
+}
+
+.dropdown-menu.active .main .a:nth-child(5) {
+    transition-delay: 0.42s;
+}
+
+.dropdown-menu.active .main .a:nth-child(6) {
+    transition-delay: 0.5s;
+}
+
+.dropdown-menu.active .main .a:nth-child(7) {
+    transition-delay: 0.6s;
+}
+
+/* Closing state - smooth fade and slide-out */
+.dropdown-menu.closing {
+    left: -100%; /* Slide back out */
+    opacity: 0; /* Fade out the menu */
+    transition: left 1s ease-in-out, opacity 1s ease-in-out; /* Smooth transition for the menu */
+}
+
+/* Ensure menu items reverse their animation when closing */
+.dropdown-menu.closing .main .a {
+    opacity: 0; /* Fade out the items */
+    transform: translateX(-80px); /* Slide them out to the left */
+    transition: opacity 0.25s ease-in-out, transform 0.25s ease-in-out; /* Reverse slide and fade for items */
+}
+
+.dropdown-menu.closing .main .a:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.dropdown-menu.closing .main .a:nth-child(2) {
+    transition-delay: 0.12s;
+}
+
+.dropdown-menu.closing .main .a:nth-child(3) {
+    transition-delay: 0.22s;
+}
+
+.dropdown-menu.closing .main .a:nth-child(4) {
+    transition-delay: 0.35s;
+}
+
+.dropdown-menu.closing .main .a:nth-child(5) {
+    transition-delay: 0.5s;
+}
+
+.dropdown-menu.closing .main .a:nth-child(6) {
+    transition-delay: 0.65s;
+}
+
+.dropdown-menu.closing .main .a:nth-child(7) {
+    transition-delay: 0.8s;
+}
+
+/* Image inside the dropdown */
+.dropdown-menu .main .img {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    transition: transform 0.4s ease-in-out; /* Smooth rotation */
+}
+
+.dropdown-menu .main .img img {
+    width: 40px;
+    transition: transform 0.4s ease-in-out; /* Smooth rotation for image */
+}
+
+.dropdown-menu .main .img img:hover {
+    transform: rotate(90deg); /* Rotate the image on hover */
+}
+
+#navbar #menu a{
+    position: relative; /* Ensure the parent element is positioned */
+}
+
+#navbar #menu a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2.5px;
+    background-color: rgb(246,139,7);
+    border-radius: 1px;
+    bottom: -2px; /* Position the underline at the bottom of the anchor */
+    left: 0;
+    transition: width 0.45s; /* Ensure the transition is applied to the width */
+}
+
+#navbar #menu a:hover::before{
+    width: 100%;
+}
