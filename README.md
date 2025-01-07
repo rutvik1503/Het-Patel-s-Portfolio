@@ -23,5 +23,5 @@ Check out the live version of the portfolio here: [hetpatel-portfolio](https://c
 For any inquiries or feedback, feel free to reach out:
 
   - **Name**: [Rutvik Bhatti](rutvikbhatti0727@gmail.com)
-- **Project**: [Het Patel's Portfolio]((https://hetpatel-portfolio-lfg17ud27-rutvikbhatti.vercel.app/))
+- **Project**: [Het Patel's Portfolio][((https://hetpatel-portfolio-lfg17ud27-rutvikbhatti.vercel.app/))](https://hetpatel-portfolio-lfg17ud27-rutvikbhatti.vercel.app/)
 
