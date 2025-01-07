@@ -20,8 +20,8 @@ Check out the live version of the portfolio here: [hetpatel-portfolio](https://c
 - **Hosting:** [Vercel](https://vercel.com)
 
 ## Contact
-If you have any questions or feedback, feel free to reach out to Het Patel.
+For any inquiries or feedback, feel free to reach out:
 
-Name : [Rutvik Bhatti](rutvikbhatti0727@gmail.com)
-Project : [Het Patel's Portfolio](https://vercel.com/rutvikbhatti/hetpatel-portfolio/F2XgJqAJcEK95fgpzVmUmazMXdhm)
+  - **Name**: [Rutvik Bhatti](rutvikbhatti0727@gmail.com)
+- **Project**: [Het Patel's Portfolio]([https://customize-shadow.vercel.app/](https://vercel.com/rutvikbhatti/hetpatel-portfolio/F2XgJqAJcEK95fgpzVmUmazMXdhm)
 
